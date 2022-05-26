@@ -103,13 +103,14 @@ form button:hover {
   justify-content: center;
   align-items: center;
   width: 60%;
+  margin-bottom: 80px;
+
 }
 
 .random-preview {
   background-color: #F1F4F9;
   width: 20rem;
   height: 50vh;
-  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
