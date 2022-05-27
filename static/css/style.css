@@ -5,21 +5,21 @@
 
 nav {
   display: flex;
-  margin-top: 20px;
+  margin-top: 1em;
   flex-direction: row;
   width: 100%;
-  max-width: 486px;
-  padding: 0 32px 0;
+  max-width: 30em;
   justify-content: space-between;
   align-items: center;
 }
 
 nav a {
+  margin: 0 16px 0;
   text-decoration: none;
 }
 
 nav a img {
-  height: 2rem;
+  height: 2em;
 }
 
 nav li a {
@@ -45,40 +45,65 @@ h4 {
 }
 
 table, td, th {
-  border: 1px solid #2b4162;
-}
-
-th {
-  color: #2b4162;
-}
-
-table td a {
-  text-align: center;
-  display: flex;
-  justify-content: center;
+  border: thin solid #000;
 }
 
 table {
   margin-top: 20px;
   border-collapse: collapse;
   width: 60%;
-  table-layout: fixed;
+}
+
+table tbody tr:nth-of-type(odd) {
+  background-color: #E3E9F3;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid #2B4162;
 }
 
 th {
-  height: 30px;
+  font-weight: 500;
+  padding: 8px;
+  color: #fff;
+  background-color: #2B4162;
 }
 
 td {
   text-align: center;
-  padding: 5px;
+  padding: 8px;
+  font-family: roboto, sans-serif;
+}
+
+td a {
+  font-family: roboto, sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+#del {
+  color: #fff;
+  background-color: #AB2346;
+}
+
+#upd {
+  color: #fff;
+  background-color: #226F54;
+}
+
+tr:hover {
+  color: #557BB4;
+  font-weight: 500;
 }
 
 form {
   margin-top: 12px;
   display: flex;
   padding-top: 8px;
-  padding-bottom: 8px;;
+  padding-bottom: 8px;
+  ;
   flex-direction: row;
   justify-content: center;
   width: 60%;
@@ -87,13 +112,13 @@ form {
 
 form input {
   -webkit-appearance: none;
-	background: #fff;
-	color: inherit;
-	border: none;
-	padding-left: 4px;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  background: #fff;
+  color: inherit;
+  border: none;
+  padding-left: 4px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
   font-size: 14px;
   margin-right: 8px;
   border-radius: 4px;
@@ -103,13 +128,13 @@ form input {
 
 form button {
   -webkit-appearance: none;
-	background: none;
-	color: #2b4162;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  background: none;
+  color: #2b4162;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
   background-color: #fff;
   font-size: 14px;
   padding: 8px;
@@ -129,7 +154,6 @@ form button:hover {
   align-items: center;
   width: 60%;
   margin-bottom: 40px;
-
 }
 
 .random-preview {
@@ -142,10 +166,10 @@ form button:hover {
   align-items: center;
   border-radius: 5%;
   margin: 20px 20px 0;
-  padding: 1em;
   box-shadow: 2px 2px 8px 2px #DDD;
+  /*
   -webkit-animation: flip 1s;
-  animation: flip 1s;
+  animation: flip 1s;*/
 }
 
 .random-preview h5 {
@@ -157,7 +181,7 @@ form button:hover {
 }
 
 .main-container a {
-	color: #2b4162;
+  color: #2b4162;
   font-size: 14px;
   border-radius: 50%;
   display: flex;
@@ -199,14 +223,17 @@ form button:hover {
   from {
     transform: rotateY(90deg)
   }
+
   to {
     transform: rotateY(0deg)
   }
 }
+
 @keyframes flip {
   from {
     transform: rotateY(90deg)
   }
+
   to {
     transform: rotateY(0deg)
-}
+  }

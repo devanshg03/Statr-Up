@@ -23,8 +23,8 @@
           <td>{{ task.content }}</td>
           <td>{{ task.date_create.date() }}</td>
           <td>
-              <a href="/delete/{{task.id}}">Delete</a>
-              <a href="/update/{{task.id}}">Update</a>
+              <a href="/delete/{{task.id}}" id="del">Delete</a>
+              <a href="/update/{{task.id}}" id="upd">Edit</a>
           </td>
       </tr>
     {% endfor %}

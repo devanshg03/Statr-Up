@@ -1,1 +1,5 @@
-<svg role="img" xmlns="http://www.w3.org/2000/svg" width="48px" height="48px" viewBox="0 0 24 24" aria-labelledby="chatIconTitle" stroke="#000" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#000"> <title id="chatIconTitle">Chat</title> <path d="M8.82388455,18.5880577 L4,21 L4.65322944,16.4273939 C3.00629211,15.0013 2,13.0946628 2,11 C2,6.581722 6.4771525,3 12,3 C17.5228475,3 22,6.581722 22,11 C22,15.418278 17.5228475,19 12,19 C10.8897425,19 9.82174472,18.8552518 8.82388455,18.5880577 Z"/> </svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <path d="M17.648,37.176L8,42L9.306,32.855C6.013,30.003 4,26.189 4,22C4,13.163 12.954,6 24,6C35.046,6 44,13.163 44,22C44,30.837 35.046,38 24,38C21.779,38 19.643,37.711 17.648,37.176Z" style="fill:rgb(43,65,98);fill-rule:nonzero;"/>
+</svg>

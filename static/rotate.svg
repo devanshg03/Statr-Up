@@ -1,1 +1,10 @@
-<svg role="img" xmlns="http://www.w3.org/2000/svg" width="48px" height="48px" viewBox="0 0 24 24" aria-labelledby="rotateIconTitle" stroke="#000" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#000"> <title id="rotateIconTitle">Rotate</title> <path d="M22 12l-3 3-3-3"/> <path d="M2 12l3-3 3 3"/> <path d="M19.016 14v-1.95A7.05 7.05 0 0 0 8 6.22"/> <path d="M16.016 17.845A7.05 7.05 0 0 1 5 12.015V10"/> <path stroke-linecap="round" d="M5 10V9"/> <path stroke-linecap="round" d="M19 15v-1"/> </svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;">
+    <path d="M44,24L38,30L32,24" style="fill:none;fill-rule:nonzero;stroke:rgb(34,111,84);stroke-width:3px;"/>
+    <path d="M4,24L10,18L16,24" style="fill:none;fill-rule:nonzero;stroke:rgb(34,111,84);stroke-width:3px;"/>
+    <path d="M38.032,28L38.032,24.097C38.032,16.362 31.667,9.997 23.932,9.997C21.103,9.997 18.339,10.849 16,12.44" style="fill:none;fill-rule:nonzero;stroke:rgb(34,111,84);stroke-width:3px;"/>
+    <path d="M32.032,35.69C29.693,37.281 26.929,38.133 24.1,38.133C16.365,38.133 10,31.768 10,24.033L10,20" style="fill:none;fill-rule:nonzero;stroke:rgb(34,111,84);stroke-width:3px;"/>
+    <path d="M10,20L10,18" style="fill:none;fill-rule:nonzero;stroke:rgb(34,111,84);stroke-width:3px;stroke-linecap:round;"/>
+    <path d="M38,30L38,28" style="fill:none;fill-rule:nonzero;stroke:rgb(34,111,84);stroke-width:3px;stroke-linecap:round;"/>
+</svg>
