@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    {% block head %}{% endblock %}
-    <title></title>
-  </head>
-  <body>
-    {% block body %}{% endblock %}
-  </body>
-  <script>
-        document.addEventListener("DOMContentLoaded", function(event) {
-            var scrollpos = localStorage.getItem('scrollpos');
-            if (scrollpos) window.scrollTo(0, scrollpos);
-        });
 
-        window.onbeforeunload = function(e) {
-            localStorage.setItem('scrollpos', window.scrollY);
-        };
-    </script>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+  {% block head %}{% endblock %}
+  <title></title>
+</head>
+
+<body>
+  <div class="content">
+    <nav>
+      <a href="/projects/"><img src="{{ url_for('static', filename='plus.svg') }}" alt=""></a>
+      <a href="/"><h1>Statr Up</h1></a>
+      <a href="#"><img src="{{ url_for('static', filename='controls.svg') }}" alt=""></a>
+    </nav>
+    {% block body %}{% endblock %}
+  </div>
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var scrollpos = localStorage.getItem('scrollpos');
+    if (scrollpos) window.scrollTo(0, scrollpos);
+  });
+
+  window.onbeforeunload = function(e) {
+    localStorage.setItem('scrollpos', window.scrollY);
+  };
+</script>
+
 </html>

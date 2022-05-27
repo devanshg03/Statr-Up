@@ -5,50 +5,25 @@
 {% endblock %}
 
 {% block body %}
-<div class="content">
-  <h1>Statr Up</h1>
-  {% if tasks|length < 1 %}
-
-<h4>There are no startups. Create yours below!</h4>
-
-  {% else %}
-
-  <table>
-    <tr>
-        <th>Project</th>
-        <th>Added</th>
-        <th>Actions</th>
-    </tr>
-    {% for task in tasks %}
-      <tr>
-          <td>{{ task.content }}</td>
-          <td>{{ task.date_create.date() }}</td>
-          <td>
-              <a href="/delete/{{task.id}}">Delete</a>
-              <a href="/update/{{task.id}}">Update</a>
-          </td>
-      </tr>
-    {% endfor %}
-  </table>
-  {% endif %}
-
-
-  <form action="/" method="POST">
-    <input type="text" name="content" id="content">
-    <button type="submit" id="submit">Add Project</button>
-  </form>
 
 <div class="main-container">
-  <a href="/" id="dislike" >
+  <a href="/" id="dislike">
     <img src="{{ url_for('static', filename='close.svg') }}" alt="Dislike">
   </a>
-    <div class="random-preview">
-      <h5>{{ nice }}</h5>
-    </div>
+  <div class="random-preview">
+    <h5>{{ nice }}</h5>
+  </div>
   <a href="/" id="like">
     <img src="{{ url_for('static', filename='favourite.svg') }}" alt="Like">
   </a>
 </div>
 
+<div class="bottom-bar">
+  <a href="#"><img src="{{ url_for('static', filename='person.svg') }}" alt=""></a>
+  <a href="#"><img src="{{ url_for('static', filename='favourite-2.svg') }}" alt=""></a>
+  <a href="#"><img src="{{ url_for('static', filename='rotate.svg') }}" alt=""></a>
+  <a href="#"><img src="{{ url_for('static', filename='chat.svg') }}" alt=""></a>
 </div>
+
+
 {% endblock %}

@@ -20,11 +20,15 @@ def index():
 
     if Startup.query.count() < 1:
         nice = "No projects"
+        return render_template('index.html', nice=nice )
     else:
         rowId = Startup.query.order_by(func.random()).first().id
         nice = Startup.query.filter_by(id=rowId).first()
         nice = nice.content
+        return render_template('index.html', nice=nice )
 
+@app.route('/projects/',methods=['POST', 'GET'])
+def projects ():
     if request.method == 'POST':
         task_content = request.form['content']
         new_task = Startup(content=task_content)
@@ -32,14 +36,15 @@ def index():
         try:
             db.session.add(new_task)
             db.session.commit()
-            return redirect('/')
+            return redirect('/projects/')
         except:
             return 'There was an issue adding your task'
 
     else:
         tasks = Startup.query.order_by(Startup.date_create).all()
 
-        return render_template('index.html', tasks=tasks, nice=nice )
+        return render_template('projects.html', tasks=tasks)
+
 
 @app.route('/delete/<int:id>')
 def delete(id):
@@ -48,7 +53,7 @@ def delete(id):
     try:
         db.session.delete(task_to_delete)
         db.session.commit()
-        return redirect('/')
+        return redirect('/projects/')
     except:
         return 'There was a problem deleting that task'
 
@@ -62,7 +67,7 @@ def update(id):
 
         try:
             db.session.commit()
-            return redirect('/')
+            return redirect('/projects/')
 
         except:
             return 'There was an issue updating your task'

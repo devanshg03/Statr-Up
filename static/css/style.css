@@ -1,6 +1,30 @@
 * {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: row;
+  width: 100%;
+  max-width: 486px;
+  padding: 0 32px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a img {
+  height: 2rem;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #2b4162;
 }
 
 .content {
@@ -10,9 +34,9 @@
 }
 
 h1 {
-  margin-top: 40px;
   text-align: center;
   color: #2b4162;
+  font-weight: 400;
 }
 
 h4 {
@@ -58,6 +82,7 @@ form {
   flex-direction: row;
   justify-content: center;
   width: 60%;
+  margin-bottom: 20px;
 }
 
 form input {
@@ -103,21 +128,22 @@ form button:hover {
   justify-content: center;
   align-items: center;
   width: 60%;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 
 }
 
 .random-preview {
   background-color: #F1F4F9;
   width: 20rem;
-  height: 50vh;
+  min-width: 300px;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5%;
   margin: 20px 20px 0;
   padding: 1em;
-  box-shadow: 2px 5px 8px 5px #CCC;
+  box-shadow: 2px 2px 8px 2px #DDD;
   -webkit-animation: flip 1s;
   animation: flip 1s;
 }
@@ -126,19 +152,22 @@ form button:hover {
   color: #000;
   font-size: 28px;
   text-align: center;
-  font-weight: lighter;
+  font-weight: 400;
+  width: 80%;
 }
 
 .main-container a {
 	color: #2b4162;
-  height: 5em;
-  width: 5em;
-  min-width: 2.5em;
   font-size: 14px;
-  border-radius: 2.5em;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 12px;
+}
+
+.main-container a img {
+  height: 3em;
 }
 
 #dislike {
@@ -147,6 +176,23 @@ form button:hover {
 
 #like {
   background-color: #226F54;
+}
+
+.bottom-bar {
+  background-color: #F1F4F9;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 486px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px 16px;
+  border-radius: 12px;
+}
+
+.bottom-bar a img {
+  height: 2em;
+  width: 2em;
 }
 
 @-webkit-keyframes flip {
