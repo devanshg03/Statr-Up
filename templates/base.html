@@ -15,7 +15,9 @@
   <div class="content">
     <nav>
       <a href="/projects/"><img src="{{ url_for('static', filename='plus.svg') }}" alt=""></a>
-      <a href="/"><h1>Statr Up</h1></a>
+      <a href="/">
+        <h1>Statr Up</h1>
+      </a>
       <a href="#"><img src="{{ url_for('static', filename='controls.svg') }}" alt=""></a>
     </nav>
     {% block body %}{% endblock %}

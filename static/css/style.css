@@ -95,7 +95,6 @@ td a {
 
 tr:hover {
   color: #557BB4;
-  font-weight: 500;
 }
 
 form {
@@ -167,9 +166,8 @@ form button:hover {
   border-radius: 5%;
   margin: 20px 20px 0;
   box-shadow: 2px 2px 8px 2px #DDD;
-  /*
   -webkit-animation: flip 1s;
-  animation: flip 1s;*/
+  animation: flip 1s;
 }
 
 .random-preview h5 {
@@ -212,6 +210,14 @@ form button:hover {
   align-items: center;
   padding: 16px 32px 16px;
   border-radius: 12px;
+}
+
+.bottom-bar a {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 2em;
+  padding: 8px;
+  box-shadow: 2px 2px 8px 2px #DDD;
 }
 
 .bottom-bar a img {

@@ -45,7 +45,6 @@ def projects ():
 
         return render_template('projects.html', tasks=tasks)
 
-
 @app.route('/delete/<int:id>')
 def delete(id):
     task_to_delete = Startup.query.get_or_404(id)
@@ -58,7 +57,6 @@ def delete(id):
         return 'There was a problem deleting that task'
 
 @app.route('/update/<int:id>', methods=['GET', 'POST'])
-
 def update(id):
     task = Startup.query.get_or_404(id)
 
