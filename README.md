@@ -6,7 +6,6 @@ This Python Flask web app serves as a platform for entrepreneurs to find and mat
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [Features](#features)
 - [Dependencies](#dependencies)
 - [Contributors](#contributors)
 
@@ -21,14 +20,8 @@ To set up the project locally, follow these steps:
 Note: You will need to create a `requirements.txt` file listing all the necessary Python packages.
 4. Start the Flask application:
 
-
 ## Usage
 After starting the application, visit `http://127.0.0.1:5000/` in your web browser to access the Co-Founder Matching Platform.
-
-## Features
-- Profile creation for entrepreneurs and potential co-founders.
-- Matching algorithm to suggest potential co-founders based on skills and interests.
-- Messaging system to facilitate communication between matched users.
 
 ## Dependencies
 - Flask
