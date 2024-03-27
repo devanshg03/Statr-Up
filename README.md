@@ -12,7 +12,7 @@ This Python Flask web app serves as a platform for entrepreneurs to find and mat
 
 ## Installation
 To set up the project locally, follow these steps:
-1. Ensure you have Python 3.x installed on your system.
+1. Ensure you have Python 3 installed on your system.
 2. Clone the repository to your local machine.
 3. Navigate to the project directory and install the required dependencies using:
 
