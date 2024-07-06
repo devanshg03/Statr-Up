@@ -17,9 +17,6 @@ To set up the project locally, follow these steps:
 
 `pip install -r requirements.txt`
 
-Note: You will need to create a `requirements.txt` file listing all the necessary Python packages.
-4. Start the Flask application:
-
 ## Usage
 After starting the application, visit `http://127.0.0.1:5000/` in your web browser to access the Co-Founder Matching Platform.
 
